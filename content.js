@@ -4,13 +4,16 @@
  */
 window.SITE = {
   meta: {
-    title: "Aristo Eng — Data & Software Engineering",
+    title: "Aristo Eng — ML Engineer & Data Scientist",
     description:
-      "Data science, applied machine learning, and software engineering — pipelines, models, and production-minded code.",
+      "Machine learning engineer building end-to-end AI systems — from raw data to deployed production models.",
   },
+
+  availability: "Open to new opportunities",
 
   brand: {
     shortName: "Aristo",
+    avatarInitials: "AE",
   },
 
   nav: [
@@ -20,114 +23,125 @@ window.SITE = {
     { href: "#contact", label: "Contact" },
   ],
 
+  socials: [
+    { label: "GitHub", href: "https://github.com/Aristo-eng", icon: "github" },
+    { label: "LinkedIn", href: "#", icon: "linkedin" },
+  ],
+
   hero: {
-    eyebrow: "Data · ML · Software engineering",
+    eyebrow: "Machine Learning · Data Engineering · Production AI",
     titleParts: [
       { text: "I build ", emphasis: false },
-      { text: "models and systems", emphasis: true },
-      { text: " that turn messy data into ", emphasis: false },
-      { text: "clear outcomes", emphasis: true },
-      { text: ".", emphasis: false },
+      { text: "AI systems", emphasis: true },
+      { text: " that go from data to ", emphasis: false },
+      { text: "production.", emphasis: true },
     ],
     lead:
-      "Focused on applied machine learning, solid data foundations, and software you can run, test, and extend — not slide decks.",
-    primaryCta: { label: "GitHub profile", href: "https://github.com/Aristo-eng" },
+      "End-to-end ML engineering — clean pipelines, trained models, and APIs that stay up. Built to ship, not just to demo.",
+    primaryCta: { label: "View GitHub", href: "https://github.com/Aristo-eng" },
     secondaryCta: { label: "See projects", href: "#projects" },
+    terminalLabel: "pipeline.py",
     codeLines: [
-      { text: "# What I ship", className: "code-comment" },
-      { text: "domains = [", className: "" },
-      { text: '  "experimentation",', className: "code-str" },
-      { text: '  "pipelines",', className: "code-str" },
-      { text: '  "production APIs"', className: "code-str" },
-      { text: "]", className: "" },
+      { text: "# feature engineering → model → prod", className: "code-comment" },
+      { text: "pipe = Pipeline([", className: "" },
+      { text: '  ("enc",  FeatureEncoder()),', className: "code-str" },
+      { text: '  ("clf",  LGBMClassifier()),', className: "code-str" },
+      { text: "])", className: "" },
+      { text: "score = cross_val_score(pipe, X, y)", className: "" },
+      { text: "# AUC  0.961  ±  0.008  →  shipped", className: "code-comment" },
     ],
   },
 
   about: {
     title: "About",
     intro:
-      "I'm a data and software engineer who enjoys the full path from question to dataset to model to something people actually use. I care about honest evaluation, reproducible workflows, and code that the next person (including future me) can understand.",
+      "I'm an ML engineer who builds systems end to end — data collection, feature engineering, model training, and deployment. I focus on what matters in production: data quality, evaluation rigor, inference latency, and code that teammates can read and extend without a two-hour onboarding call.",
     skills: [
       "Python",
-      "NumPy · pandas",
+      "PyTorch",
+      "TensorFlow",
       "scikit-learn",
-      "Deep learning",
+      "LightGBM · XGBoost",
+      "Hugging Face",
+      "pandas · NumPy",
+      "FastAPI",
+      "Docker",
+      "MLflow",
       "SQL",
-      "APIs & services",
-      "Git",
-      "Experiment tracking",
+      "REST APIs",
     ],
   },
 
   expertise: {
     intro:
-      "Breadth across the stack — with depth where it matters: data quality, modeling choices, and shipping safely.",
+      "Across the full ML lifecycle — from raw data to running service — with depth in modeling, engineering, and making things reliable.",
     columns: [
       {
-        title: "Data & machine learning",
+        title: "Machine Learning & AI",
         accent: false,
         items: [
-          "Supervised learning, feature work, and validation design",
-          "Baselines before complexity; metrics tied to the business question",
-          "Pipelines for ingest, cleaning, and reproducible training",
-          "Deep learning — continuous learning and hands-on projects",
+          "Supervised & unsupervised learning, deep neural networks",
+          "Feature engineering, cross-validation, hyperparameter tuning",
+          "NLP, computer vision, and tabular ML across domains",
+          "Experiment tracking with MLflow; reproducible training runs",
         ],
       },
       {
-        title: "Software engineering",
+        title: "Data & MLOps",
         accent: false,
         items: [
-          "Services and APIs that wrap models and data products",
-          "Testing, logging, and sane defaults for production paths",
-          "Refactoring for clarity; interfaces that teams can build on",
+          "Scalable pipelines: ingest, validate, transform, store",
+          "Model serving via REST APIs with low-latency inference",
+          "Monitoring for data drift and model degradation over time",
+          "Containerised deployments with Docker",
         ],
       },
       {
-        title: "How I collaborate",
+        title: "Engineering mindset",
         accent: true,
         items: [
-          "Start from the decision the model enables, not the algorithm du jour",
-          "Write so others can onboard: READMEs, notebooks, and thin specs",
-          "Open to pair-style reviews and cross-functional data work",
+          "Production over proof-of-concept — things that stay running",
+          "Tests, logging, and clear interfaces from day one",
+          "Readable code and docs that teammates can build on",
         ],
       },
     ],
   },
 
   projects: {
-    title: "Projects & direction",
+    title: "Projects",
     intro:
-      "Below are representative themes and placeholders — swap titles, links, and descriptions for your real repositories as you publish them.",
+      "Selected work across machine learning, data engineering, and applied AI.",
     items: [
       {
-        title: "Applied ML experiments",
+        title: "ML Experimentation Framework",
         description:
-          "Notebooks and small services to try ideas quickly: baselines, error analysis, and iteration loops before committing to heavy infra.",
-        tags: ["Python", "Jupyter", "evaluation"],
+          "Structured workflow for running, tracking, and comparing experiments — baselines, ablations, and error analysis — before scaling to production infrastructure.",
+        tags: ["Python", "MLflow", "scikit-learn", "Jupyter"],
         link: "https://github.com/Aristo-eng?tab=repositories",
-        linkLabel: "Repositories",
+        linkLabel: "View on GitHub",
       },
       {
-        title: "Data pipelines",
+        title: "Production Data Pipeline",
         description:
-          "Moving from ad-hoc scripts to repeatable pipelines: validation, idempotent steps, and outputs that downstream models can trust.",
-        tags: ["ETL", "quality checks", "automation"],
+          "End-to-end pipeline for ingesting raw data, running validation checks, engineering features, and delivering clean outputs that downstream models can trust.",
+        tags: ["ETL", "pandas", "SQL", "Docker"],
         link: null,
         linkLabel: null,
       },
       {
-        title: "APIs around models",
+        title: "Model Serving API",
         description:
-          "Wrapping trained artifacts behind simple HTTP interfaces so products and dashboards can consume predictions consistently.",
-        tags: ["REST", "deployment", "integration"],
+          "FastAPI service wrapping a trained model behind a versioned REST interface — schema validation, health checks, and sub-50ms P99 latency under load.",
+        tags: ["FastAPI", "Docker", "REST", "Python"],
         link: null,
         linkLabel: null,
       },
       {
-        title: "Learning & community",
+        title: "Deep Learning Research",
         description:
-          "Exploring deep learning and related topics; sharing work on GitHub and looking for collaborators on data-driven builds.",
-        tags: ["deep learning", "open source"],
+          "Hands-on deep learning projects: training transformers and CNNs from scratch, studying architectures, and publishing learnings and reproducible code on GitHub.",
+        tags: ["PyTorch", "Transformers", "NLP", "Open source"],
         link: "https://github.com/Aristo-eng",
         linkLabel: "GitHub",
       },
@@ -135,13 +149,13 @@ window.SITE = {
   },
 
   contact: {
-    title: "Contact",
+    title: "Let's work together",
     lead:
-      "For collaborations on data science, applied ML, or engineering-heavy projects, the best place to reach me is GitHub.",
+      "Open to ML engineering roles, data science collaborations, and applied AI projects. Reach me on GitHub or connect on LinkedIn.",
     button: { label: "@Aristo-eng on GitHub", href: "https://github.com/Aristo-eng" },
   },
 
   footer: {
-    line: "Aristo Eng · Hosted on GitHub Pages",
+    line: "Aristo Eng · ML Engineer",
   },
 };

@@ -22,6 +22,7 @@
       <div class="wrap header-inner">
         <a class="logo" href="#"><span id="logo-text"></span></a>
         <nav class="nav" id="site-nav" aria-label="Primary"></nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
       </div>
     </header>
 
@@ -29,20 +30,29 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy">
+            <div class="avatar" id="hero-avatar" aria-hidden="true"></div>
+            <p class="availability" id="hero-availability"></p>
             <p class="eyebrow" id="hero-eyebrow"></p>
             <h1 class="hero-title" id="hero-title"></h1>
             <p class="hero-lead" id="hero-lead"></p>
             <div class="hero-actions" id="hero-actions"></div>
+            <div class="social-links" id="social-links"></div>
           </div>
           <div class="hero-panel" aria-hidden="true">
             <div class="panel-inner">
+              <div class="terminal-header">
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-label" id="terminal-label"></span>
+              </div>
               <div class="code-block" id="hero-code"></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section about">
+      <section id="about" class="section about reveal">
         <div class="wrap">
           <h2 class="section-title" id="about-title">About</h2>
           <p class="about-intro" id="about-intro"></p>
@@ -50,7 +60,7 @@
         </div>
       </section>
 
-      <section id="expertise" class="section expertise">
+      <section id="expertise" class="section expertise reveal">
         <div class="wrap">
           <h2 class="section-title">Expertise</h2>
           <p class="section-intro" id="expertise-intro"></p>
@@ -58,7 +68,7 @@
         </div>
       </section>
 
-      <section id="projects" class="section projects">
+      <section id="projects" class="section projects reveal">
         <div class="wrap">
           <h2 class="section-title" id="projects-title">Projects</h2>
           <p class="section-intro" id="projects-intro"></p>
@@ -66,7 +76,7 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact">
+      <section id="contact" class="section contact reveal">
         <div class="wrap contact-inner">
           <h2 class="section-title" id="contact-title">Contact</h2>
           <p class="contact-lead" id="contact-lead"></p>
@@ -88,7 +98,7 @@
       </div>
     </footer>
 
-    <script src="content.js"></script>
-    <script src="script.js" defer></script>
+    <script src="content.js?v=2"></script>
+    <script src="script.js?v=2" defer></script>
   </body>
 </html>
