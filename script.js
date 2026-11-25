@@ -97,6 +97,23 @@
     if (title) title.textContent = a.title || "About";
     var intro = document.getElementById("about-intro");
     if (intro) intro.textContent = a.intro || "";
+    var hl = document.getElementById("about-highlights");
+    if (hl && a.highlights) {
+      clear(hl);
+      a.highlights.forEach(function (h) {
+        var box = document.createElement("div");
+        box.className = "highlight";
+        var v = document.createElement("span");
+        v.className = "highlight-value";
+        v.textContent = h.value;
+        var l = document.createElement("span");
+        l.className = "highlight-label";
+        l.textContent = h.label;
+        box.appendChild(v);
+        box.appendChild(l);
+        hl.appendChild(box);
+      });
+    }
     var skills = document.getElementById("skill-pills");
     if (skills && a.skills) {
       clear(skills);
