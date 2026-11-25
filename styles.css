@@ -1056,3 +1056,34 @@ body {
 .code-block > div {
   white-space: pre;
 }
+
+/* Hero: compact identity row, tighter top spacing, wider text column */
+.hero {
+  padding-top: clamp(1.75rem, 4vw, 3rem);
+}
+@media (min-width: 900px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  }
+}
+.hero-id {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.hero-id .avatar {
+  width: 56px;
+  height: 56px;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+.hero-id-text .availability {
+  margin: 0 0 0.4rem;
+}
+.hero-id-text .eyebrow {
+  margin: 0;
+}
+.hero-lead {
+  max-width: 44ch;
+}
