@@ -4,7 +4,7 @@
  */
 window.SITE = {
   meta: {
-    title: "Aristo Eng — Applied ML & Data Engineering for Climate and Development",
+    title: "R. Munezero Mihigo — Applied ML & Data Engineering for Climate and Development",
     description:
       "Applied ML and data engineer building Python pipelines, validated indices and simulation tools for climate and development policy — from 157-country global indices to national dashboards.",
   },
@@ -12,8 +12,8 @@ window.SITE = {
   availability: "Open to new opportunities · Kigali, Rwanda · Remote",
 
   brand: {
-    shortName: "Aristo",
-    avatarInitials: "AE",
+    shortName: "R. Munezero Mihigo",
+    avatarInitials: "RM",
   },
 
   nav: [
@@ -180,6 +180,6 @@ window.SITE = {
   },
 
   footer: {
-    line: "Aristo Eng · Applied ML & Data Engineering",
+    line: "R. Munezero Mihigo · Applied ML & Data Engineering",
   },
 };
