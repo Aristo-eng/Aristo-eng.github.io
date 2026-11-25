@@ -34,8 +34,8 @@ window.SITE = {
     titleParts: [
       { text: "I build ", emphasis: false },
       { text: "data and AI systems", emphasis: true },
-      { text: " that governments use to make ", emphasis: false },
-      { text: "policy.", emphasis: true },
+      { text: " that turn complex data into ", emphasis: false },
+      { text: "decisions.", emphasis: true },
     ],
     lead:
       "Python pipelines, validated composite indices and simulation tools — from the 157-country Green Growth Index to national dashboards for Rwanda, Kenya, Angola and Lao PDR.",
@@ -57,7 +57,7 @@ window.SITE = {
   about: {
     title: "About",
     intro:
-      "Data scientist with 4.5+ years automating data processing, validation and indicator computation for international development statistics. At the Global Green Growth Institute (GGGI) I build Python ETL pipelines that compile and validate indicator data from UN/SDG databases and national statistics, compute composite indices for 157 countries with outlier, consistency and robustness checks, and turn the results into dashboards and simulation tools for government partners. MSc in Electrical & Computer Engineering (Applied Machine Learning), Carnegie Mellon University; AI Fellow at AIMS Research and Innovation Centre.",
+      "Data scientist with 4.5+ years automating data processing, validation and indicator computation for international development statistics. At the Global Green Growth Institute (GGGI) I build Python ETL pipelines that compile and validate indicator data from UN/SDG databases and national statistics, compute composite indices for 157 countries with outlier, consistency and robustness checks, and turn the results into dashboards and simulation tools for governments, international organisations and partners. MSc in Electrical & Computer Engineering (Applied Machine Learning), Carnegie Mellon University; AI Fellow at AIMS Research and Innovation Centre.",
     highlights: [
       { value: "157", label: "countries in the Green Growth Index, validated annually" },
       { value: "6", label: "national indices: Kenya, Ghana, Togo, Zambia, Lao PDR, Angola" },
@@ -108,7 +108,7 @@ window.SITE = {
         title: "From scripts to tools",
         accent: true,
         items: [
-          "Online dashboards and simulation tools used by government partners",
+          "Online dashboards and simulation tools used by governments, international organisations and partners",
           "Documented, reproducible, tested code in Git",
           "Training modules and workshops that explain the tools to non-specialists",
         ],
